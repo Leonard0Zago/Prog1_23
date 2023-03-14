@@ -14,5 +14,6 @@ code .
 Void é um método que não dá retorno
 String é um veror de caracteres
 Ctrl + ' abre o console
+dotnet run
 }
 
