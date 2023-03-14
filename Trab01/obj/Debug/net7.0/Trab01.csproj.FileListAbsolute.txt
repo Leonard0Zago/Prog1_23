@@ -1,0 +1,15 @@
+D:\Faculdade\Programação 1\Prog3_23\Trab01\bin\Debug\net7.0\Trab01.exe
+D:\Faculdade\Programação 1\Prog3_23\Trab01\bin\Debug\net7.0\Trab01.deps.json
+D:\Faculdade\Programação 1\Prog3_23\Trab01\bin\Debug\net7.0\Trab01.runtimeconfig.json
+D:\Faculdade\Programação 1\Prog3_23\Trab01\bin\Debug\net7.0\Trab01.dll
+D:\Faculdade\Programação 1\Prog3_23\Trab01\bin\Debug\net7.0\Trab01.pdb
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.csproj.AssemblyReference.cache
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.AssemblyInfoInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.AssemblyInfo.cs
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.csproj.CoreCompileInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.dll
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\refint\Trab01.dll
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.pdb
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\Trab01.genruntimeconfig.cache
+D:\Faculdade\Programação 1\Prog3_23\Trab01\obj\Debug\net7.0\ref\Trab01.dll
