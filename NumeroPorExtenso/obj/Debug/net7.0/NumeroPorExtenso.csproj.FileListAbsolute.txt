@@ -13,3 +13,18 @@ C:\Users\408430\Documents\Vis++\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\refin
 C:\Users\408430\Documents\Vis++\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.pdb
 C:\Users\408430\Documents\Vis++\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.genruntimeconfig.cache
 C:\Users\408430\Documents\Vis++\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\ref\NumeroPorExtenso.dll
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.exe
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.deps.json
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.runtimeconfig.json
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.dll
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\bin\Debug\net7.0\NumeroPorExtenso.pdb
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.csproj.AssemblyReference.cache
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.AssemblyInfoInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.AssemblyInfo.cs
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.csproj.CoreCompileInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.dll
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\refint\NumeroPorExtenso.dll
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.pdb
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\NumeroPorExtenso.genruntimeconfig.cache
+D:\Faculdade\Programação 1\Prog3_23\NumeroPorExtenso\obj\Debug\net7.0\ref\NumeroPorExtenso.dll
