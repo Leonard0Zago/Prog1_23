@@ -17,3 +17,11 @@ Ctrl + ' abre o console
 dotnet run
 }
 
+/Subir para o git 
+/git status 
+/git add . 
+/git status 
+/git commit -m "" 
+/git remote -v 
+/git push origin main
+/
