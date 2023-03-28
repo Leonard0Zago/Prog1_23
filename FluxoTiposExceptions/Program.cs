@@ -45,4 +45,11 @@ WriteLine($"XOR  | a    | b    ");
 WriteLine($"a    |{a ^ a, -5} | {a ^ b, -5}");
 WriteLine($"b    |{b ^ a, -5} | {b ^ b, -5}");
 
-
+static bool FacaAlgo()
+{
+    WriteLine("Fazendo alguma coisa");
+    return true;
+}
+WriteLine();
+WriteLine($"a & FacaAlgo() = {a & FacaAlgo()}");
+WriteLine($"b & FacaAlgo() = {b & FacaAlgo()}");
