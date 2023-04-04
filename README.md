@@ -25,3 +25,24 @@ dotnet run
 /git remote -v 
 /git push origin main
 
+/Criando marcações dos passos do projeto com commit 
+/git status 
+/git add . - para adicionar tudo que foi alterado depois do commit 
+/git status 
+/git commit -m "Projeto Fluxo Controle" 
+/git status 
+/git remote -v 
+/git push origin main 
+
+
+/Criar uma cópia da branch principal 
+/git checkout -b "230403_FluxoControle" 
+/git status 
+/git push origin 230403_FluxoControle 
+
+
+/Subir a branch
+/git add .
+/git commit -m "IF SWITCH"
+/git push origin 230403_FluxoControle
+/No github: Vai mostrar duas branch, a main e a que foi criada
