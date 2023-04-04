@@ -1,0 +1,15 @@
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.csproj.AssemblyReference.cache
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.AssemblyInfoInputs.cache
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.AssemblyInfo.cs
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.csproj.CoreCompileInputs.cache
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\bin\Debug\net7.0\FluxoControle.exe
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\bin\Debug\net7.0\FluxoControle.deps.json
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\bin\Debug\net7.0\FluxoControle.runtimeconfig.json
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\bin\Debug\net7.0\FluxoControle.dll
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\bin\Debug\net7.0\FluxoControle.pdb
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.dll
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\refint\FluxoControle.dll
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.pdb
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\FluxoControle.genruntimeconfig.cache
+C:\Users\408430\Documents\Vis++\Prog3_23\FluxoControle\obj\Debug\net7.0\ref\FluxoControle.dll
