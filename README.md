@@ -46,3 +46,6 @@ dotnet run
 /git commit -m "IF SWITCH"
 /git push origin 230403_FluxoControle
 /No github: Vai mostrar duas branch, a main e a que foi criada
+
+/ Criando uma nova classe
+/ Cria uma pasta e na pasta cria uma C# Class
