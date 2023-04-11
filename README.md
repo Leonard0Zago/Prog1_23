@@ -49,3 +49,7 @@ dotnet run
 
 / Criando uma nova classe
 / Cria uma pasta e na pasta cria uma C# Class
+
+#____________________________________________#
+Atividade
+Fazer no portal para segunda atividade 1
