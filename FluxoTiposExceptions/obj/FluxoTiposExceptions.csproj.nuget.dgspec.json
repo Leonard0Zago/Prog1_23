@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\408430\\Documents\\Vis++\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj": {}
+    "C:\\Users\\408430\\Documents\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\408430\\Documents\\Vis++\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj": {
+    "C:\\Users\\408430\\Documents\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\408430\\Documents\\Vis++\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj",
+        "projectUniqueName": "C:\\Users\\408430\\Documents\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj",
         "projectName": "FluxoTiposExceptions",
-        "projectPath": "C:\\Users\\408430\\Documents\\Vis++\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj",
+        "projectPath": "C:\\Users\\408430\\Documents\\Prog3_23\\FluxoTiposExceptions\\FluxoTiposExceptions.csproj",
         "packagesPath": "C:\\Users\\408430\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\408430\\Documents\\Vis++\\Prog3_23\\FluxoTiposExceptions\\obj\\",
+        "outputPath": "C:\\Users\\408430\\Documents\\Prog3_23\\FluxoTiposExceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
