@@ -1,0 +1,15 @@
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.csproj.AssemblyReference.cache
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.AssemblyInfoInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.AssemblyInfo.cs
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.csproj.CoreCompileInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\bin\Debug\net7.0\AtividadePessoas.exe
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\bin\Debug\net7.0\AtividadePessoas.deps.json
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\bin\Debug\net7.0\AtividadePessoas.runtimeconfig.json
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\bin\Debug\net7.0\AtividadePessoas.dll
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\bin\Debug\net7.0\AtividadePessoas.pdb
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.dll
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\refint\AtividadePessoas.dll
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.pdb
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\AtividadePessoas.genruntimeconfig.cache
+D:\Faculdade\Programação 1\Prog3_23\AtividadePessoas\obj\Debug\net7.0\ref\AtividadePessoas.dll
