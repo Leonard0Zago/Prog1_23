@@ -52,5 +52,20 @@ dotnet run
 
 #__________________________________________#
 
-Atividade
-Fazer no portal para segunda atividade 1
+/ Pesquisar imagem de recursividade (fractais)
+/ Proporção áurea.
+/ Dois casos na recursividade:
+/ Caso base: Situações triviais que não envolvem recursão. Condição que interrompe a recurção. Exemplo função para calcular fatorial
+/ Caso recursivo: Faz a função repetir e deve forçar uma situação para atingir o caso base.
+
+
+/ Para atualizar o repositório local.
+/ git checkout main
+/ git pull origin main 
+/ 
+/ git checkout -b 230417_Recursividade
+/ 
+
+
+/ Fazer tabuada com recursividade.
+/ Ler capitulo livro workshop pag 37 até 46 atividade prática.
