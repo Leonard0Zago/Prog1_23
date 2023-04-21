@@ -31,7 +31,7 @@ namespace NumeroPorExtenso
             else if(numero == 9)
                 return "Nove";
             else
-                return "Número inválido";   
+                return null;   
         }
     }
 }
