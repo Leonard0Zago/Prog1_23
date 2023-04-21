@@ -1,0 +1,15 @@
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.csproj.AssemblyReference.cache
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.AssemblyInfoInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.AssemblyInfo.cs
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.csproj.CoreCompileInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\bin\Debug\net7.0\Tabuada.exe
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\bin\Debug\net7.0\Tabuada.deps.json
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\bin\Debug\net7.0\Tabuada.runtimeconfig.json
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\bin\Debug\net7.0\Tabuada.dll
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\bin\Debug\net7.0\Tabuada.pdb
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.dll
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\refint\Tabuada.dll
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.pdb
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\Tabuada.genruntimeconfig.cache
+D:\Faculdade\Programação 1\Prog3_23\Tabuada\obj\Debug\net7.0\ref\Tabuada.dll
