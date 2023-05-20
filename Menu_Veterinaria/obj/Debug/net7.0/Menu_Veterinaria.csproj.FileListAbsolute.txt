@@ -1,0 +1,15 @@
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\bin\Debug\net7.0\Menu_Veterinaria.exe
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\bin\Debug\net7.0\Menu_Veterinaria.deps.json
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\bin\Debug\net7.0\Menu_Veterinaria.runtimeconfig.json
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\bin\Debug\net7.0\Menu_Veterinaria.dll
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\bin\Debug\net7.0\Menu_Veterinaria.pdb
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.csproj.AssemblyReference.cache
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.AssemblyInfoInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.AssemblyInfo.cs
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.csproj.CoreCompileInputs.cache
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.dll
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\refint\Menu_Veterinaria.dll
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.pdb
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\Menu_Veterinaria.genruntimeconfig.cache
+D:\Faculdade\Programação 1\Prog3_23\Menu_Veterinaria\obj\Debug\net7.0\ref\Menu_Veterinaria.dll
