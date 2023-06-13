@@ -8,26 +8,26 @@ using Arquivos.Models;
 
 namespace Arquivos.Views
 {
-    public class ClientView
+    public class AnimalView
     {
-        private ClientController clientController;
+        private AnimalController animalController;
 
-        public ClientView()
+        public AnimalView()
         {
-            clientController = new ClientController();
+            animalController = new AnimalController();
             this.Init();
         }
 
         public void Init()
         {
             Console.WriteLine("*********************");
-            Console.WriteLine("VOCÊ ESTÁ EM CLIENTES");
+            Console.WriteLine("VOCÊ ESTÁ EM ANIMAIS");
             Console.WriteLine("*********************");
             Console.WriteLine("");
-            Console.WriteLine("1 - Inserir Cliente");
-            Console.WriteLine("2 - Listar Clientes");
-            Console.WriteLine("3 - Exportar Clientes");
-            Console.WriteLine("4 - Importar Clientes");
+            Console.WriteLine("1 - Inserir Animal");
+            Console.WriteLine("2 - Listar Animal");
+            Console.WriteLine("3 - Exportar Animal");
+            Console.WriteLine("4 - Importar Animal");
             Console.WriteLine("");
             int option = 0;
             option = Convert.ToInt32( Console.ReadLine() );
@@ -47,7 +47,7 @@ namespace Arquivos.Views
 
         private void List()
         {
-            List<Client> listagem = clientController.List();
+            List<Animal> listagem = animalController.List();
 
             for(int i = 0; i < listagem.Count; i++)
             {
@@ -56,11 +56,11 @@ namespace Arquivos.Views
 
         }
 
-        private string Print(Client client)
+        private string Print(Animal animal)
         {
             string retorno = "";
-            retorno += $"Id: {client.Id} \n";
-            retorno += $"Nome: {client.FirstName} {client.LastName} \n";
+            retorno += $"Id: {animal.Id} \n";
+            retorno += $"Nome: {animal.Name} \n";
             retorno += "-------------------------------------------";
             
 
@@ -69,26 +69,23 @@ namespace Arquivos.Views
     
         private void Insert()
         {
-            Client client = new Client();
+            Animal animal = new Animal();
 
-            client.Id = clientController.GetNextId();
+            animal.Id = animalController.GetNextId();
 
-            Console.WriteLine("Informe o primeiro nome:");
-            client.FirstName = Console.ReadLine();
+            Console.WriteLine("Informe o nome:");
+            animal.Name = Console.ReadLine();
 
-            Console.WriteLine("Informe o sobrenome:");
-            client.LastName = Console.ReadLine();
+            Console.WriteLine("Informe a raça:");
+            animal.Raça = Console.ReadLine();
 
-            Console.WriteLine("Informe o CPF:");
-            client.CPF = Console.ReadLine();
+            Console.WriteLine("Informe o tipo:");
+            animal.Tipo = Console.ReadLine();
 
-            Console.WriteLine("Informe o Email:");
-            client.Email = Console.ReadLine();
-
-            bool retorno = clientController.Insert(client);
+            bool retorno = animalController.Insert(animal);
 
             if( retorno )
-                Console.WriteLine("Cliente inserido com sucesso!");
+                Console.WriteLine("Animal inserido com sucesso!");
             else
                 Console.WriteLine("Falha ao inserir, verifique os dados");
 

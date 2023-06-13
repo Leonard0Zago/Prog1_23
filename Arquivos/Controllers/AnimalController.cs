@@ -7,37 +7,37 @@ using Arquivos.Models;
 
 namespace Arquivos.Controllers
 {
-    public class ClientController
+    public class AnimalController
     {
 
-        public List<Client> List()
+        public List<Animal> List()
         {
-            return DataSet.Clients;
+            return DataSet.Animals;
         }
 
 
-        public bool Insert(Client client)
+        public bool Insert(Animal animal)
         {
-            if( client == null )
+            if( animal == null )
                 return false;
 
-            if( client.Id <= 0 )
+            if( animal.Id <= 0 )
                 return false;
 
-            if( string.IsNullOrWhiteSpace(client.FirstName) )
+            if( string.IsNullOrWhiteSpace(animal.Name) )
                 return false;
 
-            DataSet.Clients.Add(client);
+            DataSet.Animals.Add(animal);
 
             return true;
         }
 
         public int GetNextId()
         {
-            int tam = DataSet.Clients.Count;
+            int tam = DataSet.Animals.Count;
 
             if( tam > 0 )
-                return DataSet.Clients[tam - 1].Id + 1;
+                return DataSet.Animals[tam - 1].Id + 1;
             else
                 return 1;
         }
