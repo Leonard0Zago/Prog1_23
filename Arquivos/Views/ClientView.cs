@@ -40,6 +40,14 @@ namespace Arquivos.Views
                 case 2 :
                     List();
                 break;
+
+                case 3 :
+                    Export();
+                break;
+
+                case 4 :
+                    Import();
+                break;
                 default :
                 break;
             }
@@ -56,6 +64,7 @@ namespace Arquivos.Views
 
         }
 
+
         private string Print(Client client)
         {
             string retorno = "";
@@ -67,6 +76,7 @@ namespace Arquivos.Views
             return retorno;
         }
     
+
         private void Insert()
         {
             Client client = new Client();
@@ -92,6 +102,23 @@ namespace Arquivos.Views
             else
                 Console.WriteLine("Falha ao inserir, verifique os dados");
 
+        }
+
+
+        private void Export()
+        {
+            if( clientController.ExportToTextFile() )
+                Console.WriteLine("Arquivo gerado com sucesso!");
+            else
+                Console.WriteLine("Oooops.");
+        }
+
+        private void Import()
+        {
+            if( clientController.ImportFromTxtFile() )
+                Console.WriteLine("Dados importado com sucesso!");
+            else
+                Console.WriteLine("Oooops.");
         }
 
     }

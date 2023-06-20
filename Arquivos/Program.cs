@@ -5,7 +5,7 @@
     e exportação um arquivos .txt
 */
 
-int option =0;
+int option = 0;
 
 do
 {
