@@ -14,6 +14,9 @@ namespace Arquivos.Data
         // Lista para animais
         public static List<Animal> Animals
             = new List<Animal>();
+        
+        public static List<Vete> Vetes
+            = new List<Vete>();
 
     }
 }

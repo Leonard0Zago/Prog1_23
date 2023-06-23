@@ -8,28 +8,28 @@ using Arquivos.Models;
 
 namespace Arquivos.Controllers
 {
-    public class AnimalController
+    public class VeteController
     {
         private string directoryName = "ReportFiles";
-        private string fileName = "Animals.txt";
-        public List<Animal> List()
+        private string fileName = "Veterinarios.txt";
+        public List<Vete> List()
         {
-            return DataSet.Animals;
+            return DataSet.Vetes;
         }
 
 
-        public bool Insert(Animal animal)
+        public bool Insert(Vete vete)
         {
-            if( animal == null )
+            if( vete == null )
                 return false;
 
-            if( animal.Id <= 0 )
+            if( vete.Id <= 0 )
                 return false;
 
-            if( string.IsNullOrWhiteSpace(animal.Name) )
+            if( string.IsNullOrWhiteSpace(vete.FirstName) )
                 return false;
 
-            DataSet.Animals.Add(animal);
+            DataSet.Vetes.Add(vete);
 
             return true;
         }
@@ -40,9 +40,9 @@ namespace Arquivos.Controllers
                 Directory.CreateDirectory(directoryName);
 
             string fileContent = string.Empty;
-            foreach(Animal a in DataSet.Animals)
+            foreach(Vete v in DataSet.Vetes)
             {
-              fileContent += $"{a.Id};{a.Name};{a.Raça};{a.Tipo}";   
+              fileContent += $"{v.Id};{v.CPF};{v.FirstName};{v.LastName};{v.Espec}";   
               fileContent += "\n";
             }
 
@@ -75,14 +75,15 @@ namespace Arquivos.Controllers
                 line = sr.ReadLine();
                 while( line != null )
                 {
-                    Animal animal = new Animal();
-                    string[] animalData = line.Split(';');
-                    animal.Id = Convert.ToInt32 ( animalData[0] );
-                    animal.Name = animalData[1];
-                    animal.Raça = animalData[2];
-                    animal.Tipo = animalData[3];
+                    Vete vete = new Vete();
+                    string[] veteData = line.Split(';');
+                    vete.Id = Convert.ToInt32 ( veteData[0] );
+                    vete.CPF = veteData[1];
+                    vete.FirstName = veteData[2];
+                    vete.LastName = veteData[3];
+                    vete.Espec = veteData[4];
 
-                    DataSet.Animals.Add(animal);
+                    DataSet.Vetes.Add(vete);
 
                     line = sr.ReadLine();
                 } 
@@ -100,10 +101,10 @@ namespace Arquivos.Controllers
 
         public int GetNextId()
         {
-            int tam = DataSet.Animals.Count;
+            int tam = DataSet.Vetes.Count;
 
             if( tam > 0 )
-                return DataSet.Animals[tam - 1].Id + 1;
+                return DataSet.Vetes[tam - 1].Id + 1;
             else
                 return 1;
         }

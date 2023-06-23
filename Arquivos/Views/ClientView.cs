@@ -103,8 +103,6 @@ namespace Arquivos.Views
                 Console.WriteLine("Falha ao inserir, verifique os dados");
 
         }
-
-
         private void Export()
         {
             if( clientController.ExportToTextFile() )
