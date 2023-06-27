@@ -99,6 +99,25 @@ namespace Arquivos.Controllers
 
         }
 
+        public List<Vete> SearchByName(string name)
+        {
+            if ( string.IsNullOrEmpty(name) ||
+                 string.IsNullOrWhiteSpace (name) 
+               )
+               return null;
+
+            List<Vete> vetes = new List<Vete>();
+            for(int i = 0; i < DataSet.Vetes.Count; i++)
+            {
+                var v = DataSet.Vetes[i];
+                if( v.FullName.ToLower().Contains(name.ToLower()))
+                {
+                    vetes.Add(v);
+                }
+            }
+            return vetes;
+        }
+
         public int GetNextId()
         {
             int tam = DataSet.Vetes.Count;

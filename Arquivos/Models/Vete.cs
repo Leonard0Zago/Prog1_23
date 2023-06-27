@@ -36,6 +36,14 @@ namespace Arquivos.Models
             LastName = lastName;
             CPF = cPF;
             Espec = espec;
-        }// Fim do ESCOPO deste método
+        }// Fim do ESCOPO deste método public string FullName => 
+
+        public string FullName => 
+            $"{this.FirstName} {this.LastName}";
+
+        public override string ToString()
+        {
+            return $"Id: {this.Id}; Name: {FullName}";
+        }
     } // Fim do ESCOPO da classe
 } // Fim do ESCOPO do namespace

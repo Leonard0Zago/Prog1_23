@@ -8,27 +8,27 @@ using Arquivos.Models;
 
 namespace Arquivos.Views
 {
-    public class AnimalView
+    public class VeteView
     {
-        private AnimalController animalController;
+        private VeteController veteController;
 
-        public AnimalView()
+        public VeteView()
         {
-            animalController = new AnimalController();
+            veteController = new VeteController();
             this.Init();
         }
 
         public void Init()
         {
             Console.WriteLine("*********************");
-            Console.WriteLine("VOCÊ ESTÁ EM ANIMAIS");
+            Console.WriteLine("VOCÊ ESTÁ EM VETERINÁRIOS");
             Console.WriteLine("*********************");
             Console.WriteLine("");
-            Console.WriteLine("1 - Inserir Animal");
-            Console.WriteLine("2 - Listar Animal");
-            Console.WriteLine("3 - Exportar Animal");
-            Console.WriteLine("4 - Importar Animal");
-            Console.WriteLine("5 - Pesquisar Animal");
+            Console.WriteLine("1 - Inserir Veterinários");
+            Console.WriteLine("2 - Listar Veterinários");
+            Console.WriteLine("3 - Exportar Veterinários");
+            Console.WriteLine("4 - Importar Veterinários");
+            Console.WriteLine("5 - Pesquisar Veterinários");
             Console.WriteLine("");
             int option = 0;
             option = Convert.ToInt32( Console.ReadLine() );
@@ -41,9 +41,11 @@ namespace Arquivos.Views
                 case 2 :
                     List();
                 break;
+
                 case 3 :
                     Export();
                 break;
+
                 case 4 :
                     Import();
                 break;
@@ -57,7 +59,7 @@ namespace Arquivos.Views
 
         private void List()
         {
-            List<Animal> listagem = animalController.List();
+            List<Vete> listagem = veteController.List();
 
             for(int i = 0; i < listagem.Count; i++)
             {
@@ -66,44 +68,48 @@ namespace Arquivos.Views
 
         }
 
-        private string Print(Animal animal)
+
+        private string Print(Vete vete)
         {
             string retorno = "";
-            retorno += $"Id: {animal.Id} \n";
-            retorno += $"Nome: {animal.Name} \n";
+            retorno += $"Id: {vete.Id} \n";
+            retorno += $"Nome: {vete.FirstName} {vete.LastName} \n";
             retorno += "-------------------------------------------";
             
 
             return retorno;
         }
     
+
         private void Insert()
         {
-            Animal animal = new Animal();
+            Vete vete = new Vete();
 
-            animal.Id = animalController.GetNextId();
+            vete.Id = veteController.GetNextId();
 
-            Console.WriteLine("Informe o nome:");
-            animal.Name = Console.ReadLine();
+            Console.WriteLine("Informe o primeiro nome:");
+            vete.FirstName = Console.ReadLine();
 
-            Console.WriteLine("Informe a raça:");
-            animal.Raça = Console.ReadLine();
+            Console.WriteLine("Informe o sobrenome:");
+            vete.LastName = Console.ReadLine();
 
-            Console.WriteLine("Informe o tipo:");
-            animal.Tipo = Console.ReadLine();
+            Console.WriteLine("Informe o CPF:");
+            vete.CPF = Console.ReadLine();
 
-            bool retorno = animalController.Insert(animal);
+            Console.WriteLine("Informe A especialização:");
+            vete.Espec = Console.ReadLine();
+
+            bool retorno = veteController.Insert(vete);
 
             if( retorno )
-                Console.WriteLine("Animal inserido com sucesso!");
+                Console.WriteLine("Veterinario inserido com sucesso!");
             else
                 Console.WriteLine("Falha ao inserir, verifique os dados");
 
         }
-
         private void Export()
         {
-            if( animalController.ExportToTextFile() )
+            if( veteController.ExportToTextFile() )
                 Console.WriteLine("Arquivo gerado com sucesso!");
             else
                 Console.WriteLine("Oooops.");
@@ -111,20 +117,21 @@ namespace Arquivos.Views
 
         private void Import()
         {
-            if( animalController.ImportFromTxtFile() )
+            if( veteController.ImportFromTxtFile() )
                 Console.WriteLine("Dados importado com sucesso!");
             else
                 Console.WriteLine("Oooops.");
         }
+
         private void SearchByName()
         {
-            Console.WriteLine("Pesquisar animal pelo nome.");
+            Console.WriteLine("Pesquisar veterinário pelo nome.");
             Console.WriteLine("Digite o nome:");
             string name = Console.ReadLine();
 
-            foreach( Animal a in animalController.SearchByName(name) )
+            foreach( Vete v in veteController.SearchByName(name) )
             {
-                Console.WriteLine( a.ToString() );
+                Console.WriteLine( v.ToString() );
             }
         }
     }

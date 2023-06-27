@@ -8,28 +8,28 @@ using Arquivos.Models;
 
 namespace Arquivos.Controllers
 {
-    public class AnimalController
+    public class ClinicaController
     {
         private string directoryName = "ReportFiles";
-        private string fileName = "Animals.txt";
-        public List<Animal> List()
+        private string fileName = "Clinicas.txt";
+        public List<Clinica> List()
         {
-            return DataSet.Animals;
+            return DataSet.Clinicas;
         }
 
 
-        public bool Insert(Animal animal)
+        public bool Insert(Clinica clinica)
         {
-            if( animal == null )
+            if( clinica == null )
                 return false;
 
-            if( animal.Id <= 0 )
+            if( clinica.Id <= 0 )
                 return false;
 
-            if( string.IsNullOrWhiteSpace(animal.Name) )
+            if( string.IsNullOrWhiteSpace(clinica.Name) )
                 return false;
 
-            DataSet.Animals.Add(animal);
+            DataSet.Clinicas.Add(clinica);
 
             return true;
         }
@@ -40,9 +40,9 @@ namespace Arquivos.Controllers
                 Directory.CreateDirectory(directoryName);
 
             string fileContent = string.Empty;
-            foreach(Animal a in DataSet.Animals)
+            foreach(Clinica cl in DataSet.Clinicas)
             {
-              fileContent += $"{a.Id};{a.Name};{a.Raça};{a.Tipo}";   
+              fileContent += $"{cl.Id};{cl.Name};{cl.Endereco}";   
               fileContent += "\n";
             }
 
@@ -75,14 +75,15 @@ namespace Arquivos.Controllers
                 line = sr.ReadLine();
                 while( line != null )
                 {
-                    Animal animal = new Animal();
-                    string[] animalData = line.Split(';');
-                    animal.Id = Convert.ToInt32 ( animalData[0] );
-                    animal.Name = animalData[1];
-                    animal.Raça = animalData[2];
-                    animal.Tipo = animalData[3];
+                    Client client = new Client();
+                    string[] clientData = line.Split(';');
+                    client.Id = Convert.ToInt32 ( clientData[0] );
+                    client.CPF = clientData[1];
+                    client.FirstName = clientData[2];
+                    client.LastName = clientData[3];
+                    client.Email = clientData[4];
 
-                    DataSet.Animals.Add(animal);
+                    DataSet.Clients.Add(client);
 
                     line = sr.ReadLine();
                 } 
@@ -97,31 +98,32 @@ namespace Arquivos.Controllers
             }
 
         }
-        public List<Animal> SearchByName(string name)
+
+        public List<Clinica> SearchByName(string name)
         {
             if ( string.IsNullOrEmpty(name) ||
                  string.IsNullOrWhiteSpace (name) 
                )
                return null;
 
-            List<Animal> animals = new List<Animal>();
-            for(int i = 0; i < DataSet.Animals.Count; i++)
+            List<Clinica> clinicas = new List<Clinica>();
+            for(int i = 0; i < DataSet.Clients.Count; i++)
             {
-                var a = DataSet.Animals[i];
-                if( a.Name.ToLower().Contains(name.ToLower()))
+                var cl = DataSet.Clinicas[i];
+                if( cl.Name.ToLower().Contains(name.ToLower()))
                 {
-                    animals.Add(a);
+                    clinicas.Add(cl);
                 }
             }
-            return animals;
+            return clinicas;
         }
 
         public int GetNextId()
         {
-            int tam = DataSet.Animals.Count;
+            int tam = DataSet.Clients.Count;
 
             if( tam > 0 )
-                return DataSet.Animals[tam - 1].Id + 1;
+                return DataSet.Clients[tam - 1].Id + 1;
             else
                 return 1;
         }

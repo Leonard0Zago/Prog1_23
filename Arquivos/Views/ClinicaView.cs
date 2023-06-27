@@ -8,26 +8,27 @@ using Arquivos.Models;
 
 namespace Arquivos.Views
 {
-    public class VeteView
+    public class ClinicaView
     {
-        private VeteController veteController;
+        private ClinicaController clinicaController;
 
-        public VeteView()
+        public ClinicaView()
         {
-            veteController = new VeteController();
+            clinicaController = new ClinicaController();
             this.Init();
         }
 
         public void Init()
         {
             Console.WriteLine("*********************");
-            Console.WriteLine("VOCÊ ESTÁ EM VETERINÁRIOS");
+            Console.WriteLine("VOCÊ ESTÁ EM CLINICASS");
             Console.WriteLine("*********************");
             Console.WriteLine("");
-            Console.WriteLine("1 - Inserir Veterinários");
-            Console.WriteLine("2 - Listar Veterinários");
-            Console.WriteLine("3 - Exportar Veterinários");
-            Console.WriteLine("4 - Importar Veterinários");
+            Console.WriteLine("1 - Inserir Clinicas");
+            Console.WriteLine("2 - Listar Clinicas");
+            Console.WriteLine("3 - Exportar Clinicas");
+            Console.WriteLine("4 - Importar Clinicas");
+            Console.WriteLine("5 - Pesquisar Clinicas");
             Console.WriteLine("");
             int option = 0;
             option = Convert.ToInt32( Console.ReadLine() );
@@ -48,6 +49,9 @@ namespace Arquivos.Views
                 case 4 :
                     Import();
                 break;
+                case 5 :
+                    SearchByName();
+                break;
                 default :
                 break;
             }
@@ -55,7 +59,7 @@ namespace Arquivos.Views
 
         private void List()
         {
-            List<Vete> listagem = veteController.List();
+            List<Clinica> listagem = clinicaController.List();
 
             for(int i = 0; i < listagem.Count; i++)
             {
@@ -65,11 +69,11 @@ namespace Arquivos.Views
         }
 
 
-        private string Print(Vete vete)
+        private string Print(Clinica clinica)
         {
             string retorno = "";
-            retorno += $"Id: {vete.Id} \n";
-            retorno += $"Nome: {vete.FirstName} {vete.LastName} \n";
+            retorno += $"Id: {clinica.Id} \n";
+            retorno += $"Nome: {clinica.Name} \n";
             retorno += "-------------------------------------------";
             
 
@@ -79,33 +83,27 @@ namespace Arquivos.Views
 
         private void Insert()
         {
-            Vete vete = new Vete();
+            Clinica clinica = new Clinica();
 
-            vete.Id = veteController.GetNextId();
+            clinica.Id = clinicaController.GetNextId();
 
-            Console.WriteLine("Informe o primeiro nome:");
-            vete.FirstName = Console.ReadLine();
+            Console.WriteLine("Informe o nome:");
+            clinica.Name = Console.ReadLine();
 
-            Console.WriteLine("Informe o sobrenome:");
-            vete.LastName = Console.ReadLine();
+            Console.WriteLine("Informe o endereço:");
+            clinica.Endereco = Console.ReadLine();
 
-            Console.WriteLine("Informe o CPF:");
-            vete.CPF = Console.ReadLine();
-
-            Console.WriteLine("Informe A especialização:");
-            vete.Espec = Console.ReadLine();
-
-            bool retorno = veteController.Insert(vete);
+            bool retorno = clinicaController.Insert(clinica);
 
             if( retorno )
-                Console.WriteLine("Veterinario inserido com sucesso!");
+                Console.WriteLine("Clinica inserida com sucesso!");
             else
                 Console.WriteLine("Falha ao inserir, verifique os dados");
 
         }
         private void Export()
         {
-            if( veteController.ExportToTextFile() )
+            if( clinicaController.ExportToTextFile() )
                 Console.WriteLine("Arquivo gerado com sucesso!");
             else
                 Console.WriteLine("Oooops.");
@@ -113,11 +111,22 @@ namespace Arquivos.Views
 
         private void Import()
         {
-            if( veteController.ImportFromTxtFile() )
+            if( clinicaController.ImportFromTxtFile() )
                 Console.WriteLine("Dados importado com sucesso!");
             else
                 Console.WriteLine("Oooops.");
         }
 
+        private void SearchByName()
+        {
+            Console.WriteLine("Pesquisar clinicas pelo nome.");
+            Console.WriteLine("Digite o nome:");
+            string name = Console.ReadLine();
+
+            foreach( Clinica cl in clinicaController.SearchByName(name) )
+            {
+                Console.WriteLine( cl.ToString() );
+            }
+        }
     }
 }
