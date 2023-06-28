@@ -9,6 +9,7 @@ using Arquivos.Utils;
 Bootstrapper.ChargeClients();
 Bootstrapper.ChargeAnimals();
 Bootstrapper.ChargeVetes();
+Bootstrapper.ChargeClinicas();
 
 int option = 0;
 
@@ -41,7 +42,7 @@ do
         break;
         case 4 :
             Console.WriteLine("OPÇÃO CLINICAS");
-            VeteView clinicaView = new ClinicaView();
+            ClinicaView clinicaView = new ClinicaView();
         break;
     }
 

@@ -1,2 +1,2 @@
-1;Bilu;Tomba Lata;Dog
-2;Teteia;Rola Lata;Dog
+1;Pele;Vira lata;Cachorro
+2;Bob;Laranja;Gato

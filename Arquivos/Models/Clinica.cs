@@ -9,6 +9,7 @@ namespace Arquivos.Models
     { // Início do ESCOPO da classe
         public int Id { get; set; }
         public string? Name { get; set; }
+        public string? Tel { get; set; }
         public string? Endereco { get; set; }
 
         // Os métodos contrutores são responsáveis 
@@ -24,11 +25,13 @@ namespace Arquivos.Models
         public Clinica(
             int id
             , string? name
+            , string? tel
             , string? endereco
         )
         { // Início do ESCOPO deste método
             Id = id;
             Name = name;
+            Tel = tel;
             Endereco = endereco;
         }// Fim do ESCOPO deste método
 

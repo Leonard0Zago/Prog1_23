@@ -42,7 +42,7 @@ namespace Arquivos.Controllers
             string fileContent = string.Empty;
             foreach(Clinica cl in DataSet.Clinicas)
             {
-              fileContent += $"{cl.Id};{cl.Name};{cl.Endereco}";   
+              fileContent += $"{cl.Id};{cl.Name};{cl.Tel};{cl.Endereco}";   
               fileContent += "\n";
             }
 
@@ -75,15 +75,14 @@ namespace Arquivos.Controllers
                 line = sr.ReadLine();
                 while( line != null )
                 {
-                    Client client = new Client();
-                    string[] clientData = line.Split(';');
-                    client.Id = Convert.ToInt32 ( clientData[0] );
-                    client.CPF = clientData[1];
-                    client.FirstName = clientData[2];
-                    client.LastName = clientData[3];
-                    client.Email = clientData[4];
+                    Clinica clinica = new Clinica();
+                    string[] clinicaData = line.Split(';');
+                    clinica.Id = Convert.ToInt32 ( clinicaData[0] );
+                    clinica.Name = clinicaData[1];
+                    clinica.Tel = clinicaData[2];
+                    clinica.Endereco = clinicaData[3];
 
-                    DataSet.Clients.Add(client);
+                    DataSet.Clinicas.Add(clinica);
 
                     line = sr.ReadLine();
                 } 
@@ -107,7 +106,7 @@ namespace Arquivos.Controllers
                return null;
 
             List<Clinica> clinicas = new List<Clinica>();
-            for(int i = 0; i < DataSet.Clients.Count; i++)
+            for(int i = 0; i < DataSet.Clinicas.Count; i++)
             {
                 var cl = DataSet.Clinicas[i];
                 if( cl.Name.ToLower().Contains(name.ToLower()))
@@ -120,10 +119,10 @@ namespace Arquivos.Controllers
 
         public int GetNextId()
         {
-            int tam = DataSet.Clients.Count;
+            int tam = DataSet.Clinicas.Count;
 
             if( tam > 0 )
-                return DataSet.Clients[tam - 1].Id + 1;
+                return DataSet.Clinicas[tam - 1].Id + 1;
             else
                 return 1;
         }

@@ -72,10 +72,30 @@ namespace Arquivos.Utils
             );
             DataSet.Vetes.Add(
             new Vete{
+                Id = 2,
                 FirstName = "Pedro",
                 LastName = "Pereira",
                 CPF = "444.444.444-44",
                 Espec = "Grande porte",
+                }
+            );
+        }
+        public static void ChargeClinicas()
+        {
+            DataSet.Clinicas.Add(
+            new Clinica{
+                Id = 1,
+                Name = "Vida Pet",
+                Tel = "(00) 0000-1111",
+                Endereco = "Rua dos cachorros, 123",
+                }
+            );
+            DataSet.Clinicas.Add(
+            new Clinica{
+                Id = 2,
+                Name = "Dodog",
+                Tel = "(01) 1111-0000",
+                Endereco = "Rua dos gatos, 321",
                 }
             );
         }

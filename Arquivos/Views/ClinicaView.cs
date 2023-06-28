@@ -90,6 +90,9 @@ namespace Arquivos.Views
             Console.WriteLine("Informe o nome:");
             clinica.Name = Console.ReadLine();
 
+            Console.WriteLine("Informe o telefone:");
+            clinica.Tel = Console.ReadLine();
+
             Console.WriteLine("Informe o endereço:");
             clinica.Endereco = Console.ReadLine();
 

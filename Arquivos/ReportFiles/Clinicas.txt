@@ -1,0 +1,2 @@
+1;Vida Pet;(00) 0000-1111;Rua dos cachorros, 123
+2;Dodog;(01) 1111-0000;Rua dos gatos, 321
